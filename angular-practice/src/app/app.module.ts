@@ -2,14 +2,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-// here we imported the FormsModule package and added it to our imports list to be used in out html file.. it gives us some tools we can use for inputs and all different kinds of forms
+import { ServerComponent } from './server/server.component';
+// our app module is the 'house' of our entire app persay.. here we want to import all the apps we will be using and add it to the declarations array so ts knows where to find them and angular can use them 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ServerComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
